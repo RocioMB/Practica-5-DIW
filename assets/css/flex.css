@@ -1,0 +1,28 @@
+.contenedorFlex {
+    border: 1px solid #5C767B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 15em;
+
+}
+
+.contenedorFlex article {
+    background-color: #28CC9E;
+    border: 1px solid #5C767B;
+    width: 20%;
+    height: 3em;
+    margin-top: 5px;
+    line-height: 3em;
+    text-align: center;
+}
+
+.flexCentrar {
+    align-items: center;
+    border: 1px solid #5C767B;
+    height: 15em;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-top: 10px;
+}

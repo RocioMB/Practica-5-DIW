@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'deportesDiwFont';
+    src: url('../webfonts/Dosis-VariableFont.ttf') format('truetype');
+}
+
+/****** estilos para etiquetas *******/
+
+* { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #5C767C;
+    font-family: 'deportesDiwFont', 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.25em;
+}
+
+body {
+    background-color: #FEFEFE;
+}
+
+footer {
+    background-color: #5C767B;
+    color: #E5F9E6;
+    margin-top: 4em;
+}
+
+a, a:link {
+    color: #28CC9E;
+}
+
+a:hover {
+    color: #8BE3C7;
+}
+
+aside {
+    border-top: 2px solid #5C767B;
+    border-bottom: 2px solid #5C767B;
+    margin-top: 15px;
+}
+
+img:not([alt]) {
+    border: 3px solid red;
+}
+
+a[href$=".pdf"]:after {
+    content:url("../images/iconoPDF.png");
+    margin-left: 5px;
+}
+
+/****** estilos para clases *******/
+
+.barraNavegacion {
+    background-color: #28CC9E;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    /* Con esto me aseguro de que se vea siempre */
+    z-index: 100;
+}
+
+.menuIzqda{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menuDcha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedorLogo {
+    margin-top: 5px;
+}
+
+.menuPrincipal {
+    line-height: 3em;
+    margin-left: 10px;
+}
+
+.menuPrincipal ul {
+    list-style-type: none;
+}
+
+.menuPrincipal li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.menuPrincipal li a {
+    color:#E5F9E6;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-color 0.35s ease-out;
+}
+
+.menuPrincipal li a:hover {
+    background-color: #E5F9E6;
+    border-radius: 3px;
+    color: #5C767B;
+}
+
+/* Código CSS para el subMenu */
+nav.menuPrincipal ul ul.subMenu {
+    background-color: #28CC9E;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color:#E5F9E6;
+    display: none;
+    padding: 0px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+nav.menuPrincipal ul li:hover > ul.subMenu {
+    display: inherit;
+}
+/* ----------------------------------------------- */
+
+.cambiarIdioma,
+.buscarMenu {
+    height: 3em;
+    line-height: 3em;
+    margin-right: 10px;
+}
+
+.cambiarIdioma a {
+    color:#5C767B;
+}
+
+.cambiarIdioma a:active {
+    color: #F9EA47;
+}
+
+.contenedorBody {
+    display: block;
+    position: relative;
+    top: 3em;
+    width: 100%;
+}
+
+.tabla {
+    border: 1px solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+    table-layout: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.tabla caption {
+    color: #5C767B;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tabla th {
+    background-color: #5C767B;
+    color: #E5F9E6;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #E5F9E6;
+}
+
+.tabla tr:nth-child(odd) {
+    background-color: #FAFAFA;
+}
+
+.tabla tr:first-child {
+    background-color: #EAEAEA;
+}
+
+.elementoForm {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.elementoForm label {
+    margin-right: 5px;
+}
+
+.alineaArriba {
+    vertical-align: top;
+}
+
+.formulario fieldset {
+    background-color: #E5F9E6;
+    padding: 10px;
+}
+
+.elementoDeporte {
+    border: 1px solid #5C767B;
+    margin: 10px;
+}
+
+.subElementoDeporte {
+    border: 1px solid #5C767B;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    height: 15em;
+    margin: 5px;
+    transition: background-color 0.5s ease-in 0.25s;
+}
+
+.subElementoDeporte:hover {
+    background-color: #E5F9E6;
+}
+
+.elementoDeporte h2,
+.subElementoDeporte,
+.tituloElementoCategoria,
+.textoElementoCategoria {
+    text-align: center;
+}
+
+.elementoDeporte h2 {
+    font-size: 2.75em;
+}
+
+.textoElementoCategoria {
+    font-style: oblique;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.tituloElementoCategoria {
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.tabla th {
+    text-transform: uppercase;
+}
+
+.formulario legend {
+    background-color: #FEFEFE;
+    color:#5C767B;
+    font-variant:small-caps;
+    font-weight: 700;
+    padding: 0px 5px;
+}
+
+.tabla td {
+    font-size: 0.90em;
+    padding: 3px;
+}
+
+.menuAside {
+    margin-bottom: 10px;
+}
+
+.menuAside h3 {
+    margin: 5px 0px;
+    padding-left: 5px;
+}
+
+.menuAside ul {
+    left: 30px;
+    position: relative;
+}
+
+.menuAside li {
+    padding: 5px;
+}
+
+.menuAside li a {
+    text-decoration: none;
+}
+
+.menuAside li a:visited {
+    color: #99A4B2;
+}
+
+.menuAside li a:active {
+    color: #F9EA47;
+}
+
+a.politicas:visited {
+    color: #99A4B2;
+}
+
+a.politicas:active {
+    color: #F9EA47;
+}
+
+.iconosRedesSociales {
+    bottom: 20px;
+    font-size: 1.5em;
+    position: fixed;
+    right: 10px;
+}
+
+.infoContacto {
+    margin: 15px 0px;
+}
+
+.botonEnviar {
+    background-color:#28CC9E;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #E5F9E6;
+    padding: 10px;
+    transition: 0.25s ease-in;
+}
+
+.botonEnviar:hover {
+    transform: scale(1.05);
+}
+
+.elementoForm textarea#consulta {
+    resize: none;
+}
+
+.carrusel {
+    width: 100%;
+    display: block;
+}
+
+.imagenCarrusel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media (min-width: 601px) {
+
+    .elementoDeporte {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .elementoDeporte h2 {
+        width: 100%;
+    }
+    
+    .subElementoDeporte {
+        margin: 5px 10px;
+        width: 46%;
+    }
+
+    .menuAside {
+        display: inline-block;
+        width: 47%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .contenedorElementoDeporte {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .elementoDeporte {
+        width: 48%;
+    }
+}
+
+/* Muestro el bloque menuDcha 
+hasta que se solapa con el menú */
+@media (max-width: 775px) {
+    .menuDcha {
+        display: none;
+    }
+}
+
+
+

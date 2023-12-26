@@ -1,0 +1,146 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cabecera {
+    background-color: #4388CC;
+    border: 1px solid #263C86;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 5em;
+    margin: 5px 0 5px 0;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.menu {
+    background-color: #4388CC;
+    border: 1px solid #263C86;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 5em;
+    margin: 5px 0px 5px 0px;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.nav1 {
+    background-color: #4388CC;
+    border: 1px solid #263C86;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 3em;
+    margin: 5px 0px 5px 0px;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.nav2 {
+    background-color: #4388CC;
+    border: 1px solid #263C86;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 3em;
+    margin: 5px 0px 5px 0px;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.cuerpo1 {
+    background-color: #4388CC;
+    border: 1px solid #263C86;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 10em;
+    margin: 5px 0px 5px 0px;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+ .banner {
+    background-color: #4388CC;
+    border: 1px solid #263C86;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 3em;
+    margin: 5px 0px 5px 0px;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+ }
+
+ .pie {
+    background-color: #4388CC;
+    border: 1px solid #263C86;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 3em;
+    margin: 5px 0px 5px 0px;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+ }
+
+
+@media (min-width: 601px) {
+    * {
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .nav1 {
+        height: 4em;
+    }
+    .nav2 {
+        height: 10em;
+        margin-right: 5px;
+        width: 30%;
+    }
+
+    .cuerpo1 {
+        width: 67%;
+        margin-left: 5px;
+    }
+
+    .banner {
+        height: 5em;
+    }
+}
+
+@media (min-width: 1201px) {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contenedor {
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        width: 80%;
+    }
+
+    .nav1 {
+        height: 4em;
+        width: 99%;
+    }
+
+    .nav2 {
+        height: 15em;
+        width: 39%;
+    }
+
+    .cuerpo1 {
+        height: 15em;
+        width: 59%;
+    }
+
+    .banner {
+        float: right;
+        height: 20em;
+        width: 20%;
+    }
+}
