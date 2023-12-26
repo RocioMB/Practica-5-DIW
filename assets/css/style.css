@@ -312,6 +312,10 @@ a.politicas:active {
     right: 10px;
 }
 
+.iconosRedesSociales a {
+    text-decoration: none;
+}
+
 .infoContacto {
     margin: 15px 0px;
 }
