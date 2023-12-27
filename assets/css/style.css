@@ -35,7 +35,7 @@ body {
 
 footer {
     background-color: #5C767B;
-    color: #E5F9E6;
+    color: #FFFFFF;
     margin-top: 4em;
 }
 
@@ -106,7 +106,7 @@ a[href$=".pdf"]:after {
 }
 
 .menuPrincipal li a {
-    color:#E5F9E6;
+    color:#FFFFFF;
     padding: 5px;
     text-decoration: none;
     transition: background-color 0.35s ease-out;
@@ -138,13 +138,15 @@ nav.menuPrincipal ul li:hover > ul.subMenu {
 
 .cambiarIdioma,
 .buscarMenu {
+    color:#FFFFFF;
     height: 3em;
     line-height: 3em;
     margin-right: 10px;
 }
 
 .cambiarIdioma a {
-    color:#5C767B;
+    color:#FFFFFF;
+    text-decoration: none;
 }
 
 .cambiarIdioma a:active {
@@ -175,7 +177,7 @@ nav.menuPrincipal ul li:hover > ul.subMenu {
 
 .tabla th {
     background-color: #5C767B;
-    color: #E5F9E6;
+    color: #FFFFFF;
 }
 
 .tabla tr:nth-child(even) {
@@ -285,24 +287,30 @@ nav.menuPrincipal ul li:hover > ul.subMenu {
     padding: 5px;
 }
 
+a.politicas,
+a.politicasContacto,
 .menuAside li a {
     text-decoration: none;
 }
 
-.menuAside li a:visited {
-    color: #99A4B2;
+.menuAside li a:visited,
+a.politicasContacto {
+    color: #6D7B8A;
 }
 
-.menuAside li a:active {
+.menuAside li a:active,
+a.politicas:active,
+a.politicasContacto:active,
+a.telefono:active {
     color: #F9EA47;
 }
 
 a.politicas:visited {
-    color: #99A4B2;
+    color: #FFFFFF;
 }
 
-a.politicas:active {
-    color: #F9EA47;
+a.telefono {
+    color: #6D7B8A;
 }
 
 .iconosRedesSociales {
@@ -320,7 +328,7 @@ a.politicas:active {
     background-color:#28CC9E;
     border: 1px solid black;
     border-radius: 5px;
-    color: #E5F9E6;
+    color: #FFFFFF;
     padding: 10px;
     transition: 0.25s ease-in;
 }
